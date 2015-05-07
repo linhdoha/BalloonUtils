@@ -4,7 +4,6 @@ package vn.admicro.balloonUtils
 	import flash.display.BitmapData;
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
-	import flash.display.StageQuality;
 	import flash.geom.Matrix;
 	import flash.geom.Rectangle;
 	
@@ -39,7 +38,7 @@ package vn.admicro.balloonUtils
 		{
 			var bitmapDataTemp:BitmapData = new BitmapData(_clipRect.width, _clipRect.height, true, 0x00000000);
 			var matrixTemp:Matrix = new Matrix(1, 0, 0, 1, -_clipRect.x, -_clipRect.y);
-			bitmapDataTemp.drawWithQuality(_source, matrixTemp, null, null, null, false, StageQuality.BEST);
+			bitmapDataTemp.draw(_source, matrixTemp, null, null, null, false);
 			_bitmap.bitmapData = bitmapDataTemp;
 		}
 	}
