@@ -56,3 +56,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+build.xml
+build.bat
+BalloonUtils.as3proj
+obj/BalloonUtils.flex.compc.xml
+BalloonUtils.lxml
+lib/base64.swc
