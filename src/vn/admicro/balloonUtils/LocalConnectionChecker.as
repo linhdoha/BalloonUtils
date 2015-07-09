@@ -72,8 +72,8 @@ package vn.admicro.balloonUtils
 			connection.send(_connnectionName, "_stop");
 		}
 		
-		public function callFunction(functionName:String):void {
-			connection.send(_connnectionName, "_customFunction", functionName);
+		public function callFunction(functionName:String, ... args):void {
+			connection.send(_connnectionName, "_customFunction", functionName, args);
 		}
 	}
 

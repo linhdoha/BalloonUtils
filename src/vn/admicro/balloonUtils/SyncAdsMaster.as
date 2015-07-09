@@ -94,10 +94,10 @@ package vn.admicro.balloonUtils
 			_go();
 		}
 		
-		public function callSlaveFunction(functionName:String):void {
+		public function callSlaveFunction(functionName:String, ... args):void {
 			for each (var slaveCode:String in _slaveCodes)
 			{
-				LocalConnectionChecker(lCCheckers[slaveCode]).callFunction(functionName);
+				LocalConnectionChecker(lCCheckers[slaveCode]).callFunction(functionName, args);
 			}
 		}
 	}

@@ -42,8 +42,8 @@ package vn.admicro.balloonUtils
 			_client.stop();
 		}
 		
-		public function _customFunction(functionName:String):void {
-			_client[functionName]();
+		public function _customFunction(functionName:String, ... args):void {
+			_client[functionName](args);
 		}
 	}
 
